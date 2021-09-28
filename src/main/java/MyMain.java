@@ -6,9 +6,23 @@ public class MyMain {
     // to sort our code
     // This algorithm returns the sorted array
     public static int[] selectionSort(int[] arr) {
-        // REPLACE THIS WITH YOUR CODE
+        for (int i = 0; i <= arr.length -1; i++){
+            for(int j = i+1; j<= arr.length-1; j++){
+                if(arr[i]>arr[j]) {
+
+
+                    int n = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = n;
+                }
+            }
+
+        }
         return arr;
+
     }
+
+
 
     // Implement the insertion sort algorithm that we discussed in class
     // to sort our code
